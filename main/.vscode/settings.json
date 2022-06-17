@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "random": "cpp",
+        "queue": "cpp",
+        "iosfwd": "cpp",
+        "xlocbuf": "cpp"
+    }
+}

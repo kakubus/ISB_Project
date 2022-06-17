@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>A:\Projekt\Projekt.sch</source>
+    <date>2020-11-14 15:46:54</date>
+    <tool>Eeschema (5.1.8)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Inteligentny Sterownik Bramy</title>
+        <company>JK SC</company>
+        <rev>0.1</rev>
+        <date>2020-11-14</date>
+        <source>Projekt.sch</source>
+        <comment number="1" value="Wstępny projekt schematu elektrycznego"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Zasilanie1">
+      <value>LM7805_TO220</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF</datasheet>
+      <libsource lib="Regulator_Linear" part="LM7805_TO220" description="Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FAFCCF1</tstamp>
+    </comp>
+    <comp ref="C10uF/25V1">
+      <value>CP1</value>
+      <footprint>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FAFF133</tstamp>
+    </comp>
+    <comp ref="C1uF/10V1">
+      <value>CP1</value>
+      <footprint>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FAFFEEF</tstamp>
+    </comp>
+    <comp ref="F1,5A1">
+      <value>Fuse</value>
+      <footprint>Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB0D081</tstamp>
+    </comp>
+    <comp ref="Mikrokontoler1">
+      <value>NodeMCU1.0(ESP-12E)</value>
+      <libsource lib="ESP8266" part="NodeMCU1.0(ESP-12E)" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB0E072</tstamp>
+    </comp>
+    <comp ref="Sterownik_Napędu1">
+      <value>L293D</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/l293.pdf</datasheet>
+      <libsource lib="Driver_Motor" part="L293D" description="Quadruple Half-H Drivers"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB10639</tstamp>
+    </comp>
+    <comp ref="Naped_bramy1">
+      <value>Motor_DC</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Motor" part="Motor_DC" description="DC Motor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB1552B</tstamp>
+    </comp>
+    <comp ref="IR_Receiver1">
+      <value>VS1838B</value>
+      <footprint>OptoDevice:Vishay_MOLD-3Pin</footprint>
+      <datasheet>http://www.vishay.com/docs/82460/tsop45.pdf</datasheet>
+      <libsource lib="Interface_Optical" part="TSOP45xx" description="IR Receiver Modules for Remote Control Systems"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB1B3C5</tstamp>
+    </comp>
+    <comp ref="IR_Diode1">
+      <value>IR204A</value>
+      <footprint>LED_THT:LED_D3.0mm_IRBlack</footprint>
+      <datasheet>http://www.everlight.com/file/ProductFile/IR204-A.pdf</datasheet>
+      <libsource lib="LED" part="IR204A" description="Infrared LED , 3mm LED package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB1D966</tstamp>
+    </comp>
+    <comp ref="Multiplexer1">
+      <value>CD4067BE</value>
+      <footprint>Package_DIP:DIP-24_W15.24mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf</datasheet>
+      <libsource lib="74xx" part="CD74HC4067M" description="High-Speed CMOS Logic 16-Channel Analog Multiplexer/Demultiplexer, SOIC-24"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB24524</tstamp>
+    </comp>
+    <comp ref="R100">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB6F65A</tstamp>
+    </comp>
+    <comp ref="R1000">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB70A41</tstamp>
+    </comp>
+    <comp ref="DIODA_POWIADOMIEN1">
+      <value>LED</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB8D3E9</tstamp>
+    </comp>
+    <comp ref="Konfigurator_1">
+      <value>SW_DIP_x02</value>
+      <footprint>Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_DIP_x02" description="2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB93E1D</tstamp>
+    </comp>
+    <comp ref="Krańcówka_1">
+      <value>SW_DPST_x2</value>
+      <libsource lib="Switch" part="SW_DPST_x2" description="Single Pole Single Throw (SPST) switch, separate symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB95AED</tstamp>
+    </comp>
+    <comp ref="Krańcówka_2">
+      <value>SW_DPST_x2</value>
+      <libsource lib="Switch" part="SW_DPST_x2" description="Single Pole Single Throw (SPST) switch, separate symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB9CDD7</tstamp>
+    </comp>
+    <comp ref="WYLACZNIK_GLOWNY1">
+      <value>SW_DPST_x2</value>
+      <footprint>Button_Switch_THT:SW_E-Switch_EG1271_DPDT</footprint>
+      <libsource lib="Switch" part="SW_DPST_x2" description="Single Pole Single Throw (SPST) switch, separate symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBE0FB0</tstamp>
+    </comp>
+    <comp ref="Włącznik_Sterowania_Ręcznego1">
+      <value>SW_Push</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBCE10E</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>D</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC15CEA</tstamp>
+    </comp>
+    <comp ref="Wyjscie_Przekaznika1">
+      <value>Conn_01x03_Male</value>
+      <footprint>Connector:FanPinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC58BD1</tstamp>
+    </comp>
+    <comp ref="Przekaznik1">
+      <value>SANYOU_SRD_Form_C</value>
+      <footprint>Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C</footprint>
+      <datasheet>http://www.sanyourelay.ca/public/products/pdf/SRD.pdf</datasheet>
+      <libsource lib="Relay" part="SANYOU_SRD_Form_C" description="Sanyo SRD relay, Single Pole Miniature Power Relay,"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC109B9</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BC547</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC547" description="0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC7D6C1</tstamp>
+    </comp>
+    <comp ref="R10k1">
+      <value>R</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD0E65C</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="CD74HC4067M">
+      <description>High-Speed CMOS Logic 16-Channel Analog Multiplexer/Demultiplexer, SOIC-24</description>
+      <docs>http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf</docs>
+      <footprints>
+        <fp>SOIC*W*7.5x15.4mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CD74HC4067M</field>
+        <field name="Footprint">Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COM" type="passive"/>
+        <pin num="2" name="I7" type="passive"/>
+        <pin num="3" name="I6" type="passive"/>
+        <pin num="4" name="I5" type="passive"/>
+        <pin num="5" name="I4" type="passive"/>
+        <pin num="6" name="I3" type="passive"/>
+        <pin num="7" name="I2" type="passive"/>
+        <pin num="8" name="I1" type="passive"/>
+        <pin num="9" name="I0" type="passive"/>
+        <pin num="10" name="S0" type="input"/>
+        <pin num="11" name="S1" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="S3" type="input"/>
+        <pin num="14" name="S2" type="input"/>
+        <pin num="15" name="~E" type="input"/>
+        <pin num="16" name="I15" type="passive"/>
+        <pin num="17" name="I14" type="passive"/>
+        <pin num="18" name="I13" type="passive"/>
+        <pin num="19" name="I12" type="passive"/>
+        <pin num="20" name="I11" type="passive"/>
+        <pin num="21" name="I10" type="passive"/>
+        <pin num="22" name="I9" type="passive"/>
+        <pin num="23" name="I8" type="passive"/>
+        <pin num="24" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver_Motor" part="L293">
+      <aliases>
+        <alias>L293D</alias>
+      </aliases>
+      <description>Quadruple Half-H Drivers</description>
+      <docs>http://www.ti.com/lit/ds/symlink/l293.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L293</field>
+        <field name="Footprint">Package_DIP:DIP-16_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN1,2" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="1Y" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="2Y" type="output"/>
+        <pin num="7" name="2A" type="input"/>
+        <pin num="8" name="VCC2" type="power_in"/>
+        <pin num="9" name="EN3,4" type="input"/>
+        <pin num="10" name="3A" type="input"/>
+        <pin num="11" name="3Y" type="output"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="4Y" type="output"/>
+        <pin num="15" name="4A" type="input"/>
+        <pin num="16" name="VCC1" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP8266" part="NodeMCU1.0(ESP-12E)">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NodeMCU1.0(ESP-12E)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0(ADC0)" type="input"/>
+        <pin num="2" name="RSV" type="input"/>
+        <pin num="3" name="RSV" type="input"/>
+        <pin num="4" name="SD3(GPIO10)" type="input"/>
+        <pin num="5" name="SD2(GPIO9)" type="input"/>
+        <pin num="6" name="SD1(MOSI)" type="input"/>
+        <pin num="7" name="CMD(CS)" type="input"/>
+        <pin num="8" name="SDO(MISO)" type="input"/>
+        <pin num="9" name="CLK(SCLK)" type="input"/>
+        <pin num="10" name="GND" type="input"/>
+        <pin num="11" name="3.3V" type="input"/>
+        <pin num="12" name="EN" type="input"/>
+        <pin num="13" name="RST" type="input"/>
+        <pin num="14" name="GND" type="input"/>
+        <pin num="15" name="VIN" type="input"/>
+        <pin num="16" name="3.3V" type="input"/>
+        <pin num="17" name="GND" type="input"/>
+        <pin num="18" name="TX(GPIO1)" type="input"/>
+        <pin num="19" name="RX(DPIO3)" type="input"/>
+        <pin num="20" name="D8(GPIO15)" type="input"/>
+        <pin num="21" name="D7(GPIO13)" type="input"/>
+        <pin num="22" name="D6(GPIO12)" type="input"/>
+        <pin num="23" name="D5(GPIO14)" type="input"/>
+        <pin num="24" name="GND" type="input"/>
+        <pin num="25" name="3.3V" type="input"/>
+        <pin num="26" name="D4(GPIO2)" type="input"/>
+        <pin num="27" name="D3(GPIO0)" type="input"/>
+        <pin num="28" name="D2(GPIO4)" type="input"/>
+        <pin num="29" name="D1(GPIO5)" type="input"/>
+        <pin num="30" name="D0(GPIO16)" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_Optical" part="TSDP341xx">
+      <aliases>
+        <alias>TSDP343xx</alias>
+        <alias>TSOP341xx</alias>
+        <alias>TSOP343xx</alias>
+        <alias>TSOP345xx</alias>
+        <alias>TSOP41xx</alias>
+        <alias>TSOP43xx</alias>
+        <alias>TSOP45xx</alias>
+        <alias>TSOP348xx</alias>
+      </aliases>
+      <description>IR Receiver Modules for Data Transmission</description>
+      <docs>http://www.vishay.com/docs/82667/tsdp341.pdf</docs>
+      <footprints>
+        <fp>Vishay*MOLD*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TSDP341xx</field>
+        <field name="Footprint">OptoDevice:Vishay_MOLD-3Pin</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="Vs" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="LED" part="SFH4356P">
+      <aliases>
+        <alias>IR204A</alias>
+        <alias>TSAL4400</alias>
+        <alias>SFH4346</alias>
+      </aliases>
+      <description>Infrared LED , 3mm LED package</description>
+      <docs>http://www.osram-os.com/Graphics/XPic5/00181708_0.pdf</docs>
+      <footprints>
+        <fp>LED*3.0mm*IRBlack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SFH4356P</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm_IRBlack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Motor" part="Motor_DC">
+      <description>DC Motor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>PinHeader*P2.54mm*</fp>
+        <fp>TerminalBlock*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Motor_DC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LM7805_TO220">
+      <aliases>
+        <alias>LM7806_TO220</alias>
+        <alias>LM7808_TO220</alias>
+        <alias>LM7809_TO220</alias>
+        <alias>LM7810_TO220</alias>
+        <alias>LM7812_TO220</alias>
+        <alias>LM7815_TO220</alias>
+        <alias>LM7818_TO220</alias>
+        <alias>LM7824_TO220</alias>
+        <alias>LM78M05_TO220</alias>
+        <alias>SPX2920U-3.3_TO220</alias>
+        <alias>SPX2920U-5.0_TO220</alias>
+        <alias>LF15_TO220</alias>
+        <alias>LF18_TO220</alias>
+        <alias>LF25_TO220</alias>
+        <alias>LF33_TO220</alias>
+        <alias>LF50_TO220</alias>
+        <alias>LF60_TO220</alias>
+        <alias>LF80_TO220</alias>
+        <alias>LF85_TO220</alias>
+        <alias>LF120_TO220</alias>
+        <alias>LF47_TO220</alias>
+        <alias>LF90_TO220</alias>
+        <alias>LM341T-05_TO220</alias>
+        <alias>LM341T-12_TO220</alias>
+        <alias>LM341T-15_TO220</alias>
+        <alias>LM2937xT</alias>
+        <alias>LM2931-3.3_TO220</alias>
+        <alias>LM2931-5.0_TO220</alias>
+      </aliases>
+      <description>Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220</description>
+      <docs>https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM7805_TO220</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Relay" part="SANYOU_SRD_Form_C">
+      <description>Sanyo SRD relay, Single Pole Miniature Power Relay,</description>
+      <docs>http://www.sanyourelay.ca/public/products/pdf/SRD.pdf</docs>
+      <footprints>
+        <fp>Relay*SPDT*SANYOU*SRD*Series*Form*C*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">SANYOU_SRD_Form_C</field>
+        <field name="Footprint">Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x02">
+      <description>2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DPST_x2">
+      <description>Single Pole Single Throw (SPST) switch, separate symbol</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DPST_x2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="A" type="passive"/>
+        <pin num="4" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC547">
+      <aliases>
+        <alias>BC546</alias>
+        <alias>BC548</alias>
+        <alias>BC549</alias>
+        <alias>BC550</alias>
+        <alias>BC337</alias>
+        <alias>BC338</alias>
+      </aliases>
+      <description>0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC547</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>D:\KiCad\share\kicad\library/74xx.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>D:\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>D:\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Driver_Motor">
+      <uri>D:\KiCad\share\kicad\library/Driver_Motor.lib</uri>
+    </library>
+    <library logical="ESP8266">
+      <uri>D:/KiCad/kicad-ESP8266-master/ESP8266.lib</uri>
+    </library>
+    <library logical="Interface_Optical">
+      <uri>D:\KiCad\share\kicad\library/Interface_Optical.lib</uri>
+    </library>
+    <library logical="LED">
+      <uri>D:\KiCad\share\kicad\library/LED.lib</uri>
+    </library>
+    <library logical="Motor">
+      <uri>D:\KiCad\share\kicad\library/Motor.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>D:\KiCad\share\kicad\library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="Relay">
+      <uri>D:\KiCad\share\kicad\library/Relay.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>D:\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>D:\KiCad\share\kicad\library/Transistor_BJT.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(DIODA_POWIADOMIEN1-Pad2)">
+      <node ref="DIODA_POWIADOMIEN1" pin="2"/>
+      <node ref="Multiplexer1" pin="9"/>
+    </net>
+    <net code="2" name="Net-(Mikrokontoler1-Pad26)">
+      <node ref="Multiplexer1" pin="1"/>
+      <node ref="Mikrokontoler1" pin="26"/>
+    </net>
+    <net code="3" name="Net-(Mikrokontoler1-Pad1)">
+      <node ref="Mikrokontoler1" pin="1"/>
+      <node ref="R100" pin="1"/>
+      <node ref="R1000" pin="2"/>
+    </net>
+    <net code="4" name="Net-(Krańcówka_2-Pad1)">
+      <node ref="Krańcówka_2" pin="1"/>
+      <node ref="Multiplexer1" pin="7"/>
+    </net>
+    <net code="5" name="Net-(Krańcówka_1-Pad1)">
+      <node ref="Multiplexer1" pin="8"/>
+      <node ref="Krańcówka_1" pin="1"/>
+    </net>
+    <net code="6" name="Net-(Mikrokontoler1-Pad30)">
+      <node ref="Multiplexer1" pin="10"/>
+      <node ref="Mikrokontoler1" pin="30"/>
+    </net>
+    <net code="7" name="Net-(C10uF/25V1-Pad1)">
+      <node ref="F1,5A1" pin="2"/>
+      <node ref="Zasilanie1" pin="1"/>
+      <node ref="C10uF/25V1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(Mikrokontoler1-Pad27)">
+      <node ref="Mikrokontoler1" pin="27"/>
+      <node ref="Multiplexer1" pin="13"/>
+    </net>
+    <net code="9" name="Net-(Mikrokontoler1-Pad28)">
+      <node ref="Multiplexer1" pin="14"/>
+      <node ref="Mikrokontoler1" pin="28"/>
+    </net>
+    <net code="10" name="Net-(Mikrokontoler1-Pad29)">
+      <node ref="Multiplexer1" pin="11"/>
+      <node ref="Mikrokontoler1" pin="29"/>
+    </net>
+    <net code="11" name="Net-(Mikrokontoler1-Pad25)">
+      <node ref="Multiplexer1" pin="24"/>
+      <node ref="Mikrokontoler1" pin="25"/>
+    </net>
+    <net code="12" name="Net-(Naped_bramy1-Pad1)">
+      <node ref="R100" pin="2"/>
+      <node ref="Naped_bramy1" pin="1"/>
+      <node ref="Sterownik_Napędu1" pin="3"/>
+    </net>
+    <net code="13" name="Net-(Naped_bramy1-Pad2)">
+      <node ref="R1000" pin="1"/>
+      <node ref="Sterownik_Napędu1" pin="6"/>
+      <node ref="Naped_bramy1" pin="2"/>
+    </net>
+    <net code="14" name="Net-(D1-Pad2)">
+      <node ref="Przekaznik1" pin="5"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="15" name="Net-(Przekaznik1-Pad4)">
+      <node ref="Przekaznik1" pin="4"/>
+      <node ref="Wyjscie_Przekaznika1" pin="3"/>
+    </net>
+    <net code="16" name="Net-(Przekaznik1-Pad3)">
+      <node ref="Wyjscie_Przekaznika1" pin="1"/>
+      <node ref="Przekaznik1" pin="3"/>
+    </net>
+    <net code="17" name="Net-(Przekaznik1-Pad1)">
+      <node ref="Wyjscie_Przekaznika1" pin="2"/>
+      <node ref="Przekaznik1" pin="1"/>
+    </net>
+    <net code="18" name="+12V">
+      <node ref="WYLACZNIK_GLOWNY1" pin="1"/>
+    </net>
+    <net code="19" name="Net-(Q1-Pad2)">
+      <node ref="R10k1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="20" name="Net-(Multiplexer1-Pad3)">
+      <node ref="R10k1" pin="1"/>
+      <node ref="Multiplexer1" pin="3"/>
+    </net>
+    <net code="22" name="Net-(F1,5A1-Pad1)">
+      <node ref="WYLACZNIK_GLOWNY1" pin="2"/>
+      <node ref="F1,5A1" pin="1"/>
+    </net>
+    <net code="23" name="Net-(Multiplexer1-Pad4)">
+      <node ref="Multiplexer1" pin="4"/>
+      <node ref="Włącznik_Sterowania_Ręcznego1" pin="1"/>
+    </net>
+    <net code="24" name="Net-(Konfigurator_1-Pad1)">
+      <node ref="Multiplexer1" pin="6"/>
+      <node ref="Konfigurator_1" pin="1"/>
+    </net>
+    <net code="25" name="Net-(Konfigurator_1-Pad2)">
+      <node ref="Konfigurator_1" pin="2"/>
+      <node ref="Multiplexer1" pin="5"/>
+    </net>
+    <net code="28" name="Net-(Mikrokontoler1-Pad19)">
+      <node ref="Mikrokontoler1" pin="19"/>
+    </net>
+    <net code="29" name="Net-(Mikrokontoler1-Pad18)">
+      <node ref="Mikrokontoler1" pin="18"/>
+    </net>
+    <net code="30" name="GNDREF">
+      <node ref="Multiplexer1" pin="12"/>
+      <node ref="Sterownik_Napędu1" pin="4"/>
+      <node ref="Sterownik_Napędu1" pin="5"/>
+      <node ref="Sterownik_Napędu1" pin="13"/>
+      <node ref="Włącznik_Sterowania_Ręcznego1" pin="2"/>
+      <node ref="Sterownik_Napędu1" pin="12"/>
+      <node ref="IR_Receiver1" pin="2"/>
+      <node ref="IR_Diode1" pin="1"/>
+      <node ref="Zasilanie1" pin="2"/>
+      <node ref="C10uF/25V1" pin="2"/>
+      <node ref="C1uF/10V1" pin="2"/>
+      <node ref="Krańcówka_2" pin="2"/>
+      <node ref="Krańcówka_1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="Mikrokontoler1" pin="17"/>
+      <node ref="Konfigurator_1" pin="3"/>
+      <node ref="Mikrokontoler1" pin="14"/>
+      <node ref="Mikrokontoler1" pin="24"/>
+      <node ref="Konfigurator_1" pin="4"/>
+      <node ref="DIODA_POWIADOMIEN1" pin="1"/>
+    </net>
+    <net code="31" name="Net-(Mikrokontoler1-Pad16)">
+      <node ref="Mikrokontoler1" pin="16"/>
+    </net>
+    <net code="32" name="Net-(Sterownik_Napędu1-Pad15)">
+      <node ref="Sterownik_Napędu1" pin="15"/>
+    </net>
+    <net code="33" name="Net-(Sterownik_Napędu1-Pad8)">
+      <node ref="Sterownik_Napędu1" pin="8"/>
+    </net>
+    <net code="34" name="Net-(Mikrokontoler1-Pad21)">
+      <node ref="Mikrokontoler1" pin="21"/>
+      <node ref="Sterownik_Napędu1" pin="7"/>
+    </net>
+    <net code="35" name="Net-(Mikrokontoler1-Pad22)">
+      <node ref="Sterownik_Napędu1" pin="2"/>
+      <node ref="Mikrokontoler1" pin="22"/>
+    </net>
+    <net code="36" name="Net-(C1uF/10V1-Pad1)">
+      <node ref="Zasilanie1" pin="3"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C1uF/10V1" pin="1"/>
+      <node ref="Mikrokontoler1" pin="15"/>
+      <node ref="Sterownik_Napędu1" pin="16"/>
+      <node ref="Przekaznik1" pin="2"/>
+    </net>
+    <net code="37" name="Net-(Mikrokontoler1-Pad13)">
+      <node ref="Mikrokontoler1" pin="13"/>
+    </net>
+    <net code="38" name="Net-(Sterownik_Napędu1-Pad14)">
+      <node ref="Sterownik_Napędu1" pin="14"/>
+    </net>
+    <net code="39" name="Net-(Sterownik_Napędu1-Pad11)">
+      <node ref="Sterownik_Napędu1" pin="11"/>
+    </net>
+    <net code="40" name="Net-(Sterownik_Napędu1-Pad10)">
+      <node ref="Sterownik_Napędu1" pin="10"/>
+    </net>
+    <net code="41" name="Net-(Mikrokontoler1-Pad23)">
+      <node ref="Sterownik_Napędu1" pin="1"/>
+      <node ref="Mikrokontoler1" pin="23"/>
+    </net>
+    <net code="42" name="Net-(Mikrokontoler1-Pad8)">
+      <node ref="Mikrokontoler1" pin="8"/>
+    </net>
+    <net code="43" name="Net-(Mikrokontoler1-Pad12)">
+      <node ref="Mikrokontoler1" pin="12"/>
+    </net>
+    <net code="44" name="Net-(IR_Receiver1-Pad3)">
+      <node ref="Mikrokontoler1" pin="11"/>
+      <node ref="IR_Receiver1" pin="3"/>
+    </net>
+    <net code="45" name="Net-(Mikrokontoler1-Pad20)">
+      <node ref="Mikrokontoler1" pin="20"/>
+    </net>
+    <net code="46" name="Net-(Mikrokontoler1-Pad10)">
+      <node ref="Mikrokontoler1" pin="10"/>
+    </net>
+    <net code="47" name="Net-(Mikrokontoler1-Pad9)">
+      <node ref="Mikrokontoler1" pin="9"/>
+    </net>
+    <net code="48" name="Net-(Sterownik_Napędu1-Pad9)">
+      <node ref="Sterownik_Napędu1" pin="9"/>
+    </net>
+    <net code="49" name="Net-(Mikrokontoler1-Pad7)">
+      <node ref="Mikrokontoler1" pin="7"/>
+    </net>
+    <net code="50" name="Net-(Mikrokontoler1-Pad6)">
+      <node ref="Mikrokontoler1" pin="6"/>
+    </net>
+    <net code="51" name="Net-(IR_Receiver1-Pad1)">
+      <node ref="Mikrokontoler1" pin="4"/>
+      <node ref="IR_Receiver1" pin="1"/>
+    </net>
+    <net code="52" name="Net-(Mikrokontoler1-Pad3)">
+      <node ref="Mikrokontoler1" pin="3"/>
+    </net>
+    <net code="53" name="Net-(Mikrokontoler1-Pad2)">
+      <node ref="Mikrokontoler1" pin="2"/>
+    </net>
+    <net code="54" name="Net-(IR_Diode1-Pad2)">
+      <node ref="Mikrokontoler1" pin="5"/>
+      <node ref="IR_Diode1" pin="2"/>
+    </net>
+    <net code="55" name="Net-(Multiplexer1-Pad2)">
+      <node ref="Multiplexer1" pin="2"/>
+    </net>
+    <net code="56" name="Net-(Multiplexer1-Pad23)">
+      <node ref="Multiplexer1" pin="23"/>
+    </net>
+    <net code="57" name="Net-(Multiplexer1-Pad22)">
+      <node ref="Multiplexer1" pin="22"/>
+    </net>
+    <net code="58" name="Net-(Multiplexer1-Pad21)">
+      <node ref="Multiplexer1" pin="21"/>
+    </net>
+    <net code="59" name="Net-(Multiplexer1-Pad20)">
+      <node ref="Multiplexer1" pin="20"/>
+    </net>
+    <net code="60" name="Net-(Multiplexer1-Pad19)">
+      <node ref="Multiplexer1" pin="19"/>
+    </net>
+    <net code="61" name="Net-(Multiplexer1-Pad18)">
+      <node ref="Multiplexer1" pin="18"/>
+    </net>
+    <net code="62" name="Net-(Multiplexer1-Pad17)">
+      <node ref="Multiplexer1" pin="17"/>
+    </net>
+    <net code="63" name="Net-(Multiplexer1-Pad16)">
+      <node ref="Multiplexer1" pin="16"/>
+    </net>
+    <net code="64" name="Net-(Multiplexer1-Pad15)">
+      <node ref="Multiplexer1" pin="15"/>
+    </net>
+  </nets>
+</export>
