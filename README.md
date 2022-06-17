@@ -7,7 +7,7 @@ Automatyka i Robotyka Sem V (2020/2021). Grupa TI-4 (s. 5)</h5>
 <b>Autorzy:</b><br/>
 <ul>
    <li>Jakub Kaniowski (https://github.com/kakubus)</li>
-   <li>Szymon Ciemała (https://github.com/szymciem)</li>
+   <li>Szymon Ciemała (https://github.com/szymciem8)</li>
 </ul>
 <hr/>
 
