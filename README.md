@@ -1,9 +1,10 @@
+
 <hr/>
 <h5>Politechnika Śląska</br>
 Wydział Automatyki Elektroniki i Informatyki</br>
 Automatyka i Robotyka Sem V (2020/2021). Grupa TI-4 (s. 5)</h5>
 <hr/>
-
+<h2>Inteligentny sterownik bramy - <i>Projekt na Systemy Mikroprocesorowe</i></h2>
 <b>Autorzy:</b><br/>
 <ul>
    <li>Jakub Kaniowski (https://github.com/kakubus)</li>
@@ -11,8 +12,6 @@ Automatyka i Robotyka Sem V (2020/2021). Grupa TI-4 (s. 5)</h5>
 </ul>
 <hr/>
 
-<h3>Inteligentny sterownik bramy - <i>Projekt na Systemy Mikroprocesorowe</i></h3>
-<br/>
 <h4>Struktura repozytorium:</h4>
 
 1. <b>main</b> - Główny program sterownika</i>
@@ -28,6 +27,7 @@ Automatyka i Robotyka Sem V (2020/2021). Grupa TI-4 (s. 5)</h5>
         * Inne pliki tymczasowe, schematy elektryczne, projekty płytek PCB.
 6. <b>RFID</b> - <i>Program testowy dla modułu RFID</i>
  </br></br>   
+ <hr/>
 <p align="center">
    <p>Zaprojektowana i wytrawiona płytka PCB:<br/></p>
    <img src="/Inne/IMG_9818.JPG" width="512" title="PCB">
