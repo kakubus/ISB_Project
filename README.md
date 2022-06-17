@@ -33,8 +33,8 @@ Automatyka i Robotyka Sem V (2020/2021). Grupa TI-4 (s. 5)</h5>
    <img src="/Inne/IMG_9818.JPG" width="512" title="PCB">
    <p>Skonstruowany sterownik:<br/></p>
    <img src="/Inne/IMG_9850.JPG" width="512" title="Sterownik bramy">
-   <p>Środowisko testowe:<br/></p>
-   <img src="/Inne/IMG_9793.JPG" width="512" title="Środowisko testowe">
+   <p>Platforma testowa:<br/></p>
+   <img src="/Inne/IMG_9793.JPG" width="512" title="Platforma testowa">
 </p>
   <br/>
   <hr/>  
